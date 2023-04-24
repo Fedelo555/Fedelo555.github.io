@@ -97,7 +97,7 @@ nav ul ul li a {
 nav ul ul li a:hover {
     background-color:hsl(236, 89%, 65%);
 }
-.boxing{
+#boxing{
     background-color: rgb(147, 248, 214);
     display: inline-block;
     text-align: center;
