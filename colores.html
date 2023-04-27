@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Fedelo eDiLSA</title>
+  <link rel="stylesheet" href="dsla.css">
+  <meta name= "author" content="Fedelo">
+  <meta charset="utf-8">
+  <link rel="icon" href="manos.ico">
+  <style>
+    .video-container {
+      width: 370px;
+      height: 410px;
+      margin: 0 auto;
+      box-shadow: 5px 5px 10px hsl(0, 0%, 35%);
+    }
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+            <a href="#">Categorias de palabras</a>
+            <ul>
+                <li><a href="#">prueba2</a></li>
+                <li><a href="colores.html">Colores</a></li>
+                <li><a href="#">prueba1</a></li>
+                  <ul>
+                    <li><a href="#">prueba1.1</a></li>
+                  </ul>
+                <li><a href="nature.html">Naturaleza</a></li>
+                <li><a href="educ.html">Educación</a></li>
+            </ul>
+        </li>
+        <li><a href="#config">Configuraciónes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+   
+  <center>
+    <h1 id="titulo">Diccionario digital de Lengua de Señas Argentinas (eDiLSA)</h1>
+</center>
+<hr width="100%">
+
+  
+
+  
+<div>
+  <center><h1 id="boxing">Colores</h1></center>
+</div>
+<h2>Elegí la palabra que buscás señar</h2>
+  <p>Debajo encontrarás el menú de palabras disponibles para conocer la configuración de la seña correspondiente. Al seleccionarla podrás visualizarla en el video.<br>También podés tipear la palabra para encontrarla mas rápido. <br>¡Disfrutá!</p>
+  <br>
+  <br>
+  <center>
+  <select id="videoSelector">
+    <option value="">Selecciona un video</option>
+  
+    
+    <option value="señas/Colores/amarillo.mp4">Amarillo</option>
+    <option value="señas/Colores/blanco.mp4">Blanco</option>
+    <option value="señas/Colores/brillante.mp4">Brillante</option>
+    <option value="señas/Colores/claro.mp4">Claro</option>
+    <option value="señas/Colores/Colores.mp4">Colores</option>
+    <option value="señas/Colores/gris.mp4">Gris</option>
+    <option value="señas/Colores/marron.mp4">Marron</option>
+    <option value="señas/Colores/naranja.mp4">Naranja</option>
+    <option value="señas/Colores/negro.mp4">Negro</option>
+    <option value="señas/Colores/oscuro.mp4">Oscuro</option>
+    <option value="señas/Colores/rojo.mp4">Rojo</option>
+    <option value="señas/Colores/rosa.mp4">Rosa</option>
+    <option value="señas/Colores/violeta.mp4">Violeta</option>
+    <option value="señas/Colores/celeste.mp4">Celeste</option>
+    <option value="señas/Colores/verde.mp4">Verde</option>
+    <option value="señas/Colores/azul.mp4">Azul</option>
+    
+
+
+
+
+
+    </select></center>
+    <br>
+    <br>
+    <div class="video-container">
+      <video id="videoPlayer" controls></video>
+    </div>
+    <script>
+      var videoSelector = document.getElementById('videoSelector');
+      var videoPlayer = document.getElementById('videoPlayer');
+  
+      videoSelector.addEventListener('change', function() {
+        var selectedVideo = videoSelector.value;
+        if (selectedVideo === '') {
+          videoPlayer.src = '';
+        } else {
+          videoPlayer.src = selectedVideo;
+          videoPlayer.play();
+        }
+      });
+     
+    </script>
+  
+
+<br>
+<br>
+<br>
+  <h2>¡Ayudáme con eDiLSA!</h2>
+  <p>¿Te resulta útil el sitio? ¿Aprendiste cosas nuevas? ¿Te divertiste? ¡Genial! es la idea, pero esto me lleva tiempo y esfuerzo. Podés ayudarme a mantenerlo vigente y a que siga creciendo,
+    al <a href="#contacto">pié de la página</a> encontrarás información sobre cómo colaborar. Tu aporte es importante y por supuesto, ¡Muy agradecido! 
+  </p>
+  
+</body>
+<br>
+<br>
+<br>
+<br>
+<hr width="100%">
+<center><footer>Elaborado por Fedelo<br>
+    <img id="contacto" src="fedeloface.jpg" width="100px"><br>
+    <a href="mailto:fedeloard@gmail.com"> ¡Escribime!</a>
+</footer> 
+<br>
+
+<br>
+<br>
+<img src="mp.png">
+  <br>
+Para colaborar con el sitio, podés transferir dinero a través de Mercado Pago.<br>
+El alias es: 
+<br><strong>fede.edilsa.fondo.mp</strong> 
+<br>¡Muchas gracias por tu ayuda!
+<br>
+<a href="#titulo">Volver a inicio</a></center>
+<br>
+</html>
